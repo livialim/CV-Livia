@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Estilizei o Iframe através do style pois é um conteúdo apenas do arquivo links.html, assim o site fica mais organizado -->
+    <style>
+        /* Deixa o Iframe ocupando 100% do container, com 600px de altura e sem bordas */
+        iframe { 
+            width: 100%;
+            height: 600px;
+            border: none; 
+        }
+        /* Define o espaçamento entre o Iframe e o botão */
+        .button-container { 
+            margin-bottom: 20px;
+            padding-top: 40px;
+        }
+        /* Estiliza o botão */
+        .button-container button { 
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            transition: 1s all;
+        }
+        /* Estiliza o botão ao passar o mouse */
+        .button-container button:hover { 
+            transform: scale(1.1);
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="caixa"></div>
+                <h1><img src="Fotoram.io.png" alt="Foto Livia"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Apresentação</a></li>
+                        <li><a href="informacao.html">Informações</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+        
+        </header>
+        <main class="conteudo">
+            <div class="texto">
+                <br><br><h1>Projetos</h1>
+                <div class="button-container"> 
+                    <button onclick="loadIframe('https://portifolio-livialim.vercel.app/')">Portfólio</button> <!-- Cria o botão para abrir o Iframe -->
+                    <button onclick="openPage('https://github.com/livialim')">Abrir GitHub</button> <!-- Cria o botão para abrir o GitHub fora da página -->
+                </div>
+                <div class="iframe-container"> <!-- Cria o Iframe -->
+                    <iframe id="iframe-content" src=""></iframe>
+                </div>
+                <script>
+                    function loadIframe(url) { /* Função para carregar o Iframe */
+                        document.getElementById('iframe-content').src = url;
+                    }
+                    function openPage(url) { /* Função para abrir o GitHub */
+                        window.open(url, '_blank');
+                    }
+                </script>
+            </div>
+        </main>
+
+        <footer>
+            <p>Feito por Livia Lima</p>
+        </footer>
+    </div>
+</body>
+</html>

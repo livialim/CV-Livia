@@ -1,0 +1,72 @@
+/* Reseta margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Define a altura da tela para o contêiner e a fonte padrão */
+html, body {
+    height: 100%;
+    font-family: Madefor, Helvetica Neue, Helvetica, Arial, メイリオ, meiryo, ヒラギノ角ゴ pro w3, hiragino kaku gothic pro, sans-serif;
+}
+/* Estiliza o cabeçalho */
+header {
+    width: 100%;
+    background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnRsODk4dnhjZ2oyOWk3b29mMHpxa216dmpsdm91MzdqMHdlN2tuOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HscDLzkO8EOTmgkhQP/giphy.gif');
+    text-align: center;
+    padding-top: 15px;
+}
+/* Estiliza o contêiner principal como flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Estilos da navegação */
+nav ul {
+    list-style: none;
+    padding: 20px; /* Deixar espaço entre a navegação e o body*/
+    margin-top: 40px; /* Adicionando espaço entre o cabelhaço (logo) e a navegação */
+	cursor: pointer; 
+}
+/* Efeito visual de "zoom" ao passar o mouse na navegação */
+nav ul li:hover{
+    transform: scale(1.1);
+}
+/* Estiliza a navegação */
+nav ul li {
+    display: inline-block; /* Deixa as navegações alinhados */
+    margin: 0 10px; /* Deixa espaço entre as navegações */
+}
+/* Estiliza a navegação */
+nav ul li a {
+    color: white; 
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none; 
+    padding: 15px;
+}
+/* Estilos do conteúdo/texto principal */
+.conteudo{
+    text-align: left;
+    padding: 10px;
+	font-size: 20px;
+	margin: auto;
+	width: 800px;
+}
+/* Estiliza o texto */
+.texto {
+    font-size: 20px;
+    width: 800px;
+}
+/* Estiliza o rodapé*/
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+    font-weight: bold;
+}
+
